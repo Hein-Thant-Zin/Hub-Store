@@ -5,7 +5,7 @@ import { ShoppingBag } from 'lucide-react'
 export default function CartAction() {
   return (
     <div className=''>
-      <Button class>
+      <Button className='rounded-lg'>
         <ShoppingBag size={18} color='white'/>
       </Button>
     </div>
