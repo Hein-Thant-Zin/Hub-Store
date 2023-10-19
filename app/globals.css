@@ -73,6 +73,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .hover-transition {
+      @apply transition duration-500 hover:text-gray-300
+  }
 }
 
 :root,

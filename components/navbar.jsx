@@ -1,11 +1,18 @@
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 
 import NavLinks from './nav-links'
 import CartAction from './cart-action'
-import getCategories from '@/actions/getCategories'
+import getCategories from '@/actions/getCategories';
 
 export default async function NavBar() {
-  const categories = await getCategories();
+  // const categories = await getCategories();
+  const categories = [
+    { id: 1, name: 'Bags', slug: 'bags' },
+    { id: 2, name: 'Shoes', slug: 'shoes' },
+    { id: 3, name: 'Shirts', slug: 'shirts' },
+    { id: 4, name: 'Trousers', slug: 'trousers' },
+  ];
   console.log(categories);
 
   return (
